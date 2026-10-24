@@ -71,7 +71,7 @@ public:
     }
 
     // Indica si está vacía. Tiempo: O(1); espacio auxiliar: O(1).
-    bool is_empty() const { return heap.empty(); }
+    bool empty() const { return heap.empty(); }
 
     // Devuelve la cantidad de elementos. Tiempo: O(1); espacio auxiliar: O(1).
     std::size_t size() const { return heap.size(); }
@@ -93,16 +93,16 @@ int main() {
             }
             case 2:
                 // Se imprime el máximo antes de eliminarlo, como en el ejemplo solicitado.
-                if (!pq.is_empty()) {
+                if (!pq.empty()) {
                     std::cout << pq.top() << '\n';
                     pq.pop();
                 }
                 break;
             case 3: pq.print(); break;
             case 4:
-                if (!pq.is_empty()) std::cout << pq.top() << '\n';
+                if (!pq.empty()) std::cout << pq.top() << '\n';
                 break;
-            case 5: std::cout << (pq.is_empty() ? "true" : "false") << '\n'; break;
+            case 5: std::cout << (pq.empty() ? "true" : "false") << '\n'; break;
             case 6: std::cout << pq.size() << '\n'; break;
             default: break;
         }
