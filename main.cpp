@@ -3,7 +3,7 @@
  * controlada mediante opciones leidas desde la entrada estandar.
  * Autores: Jaime Hugo Islas Trujillo, A01821293
  *          Francisco Xavier Olivos Barranco, A01820288
- * Fecha: 24 de octubre de 2026
+ * Fecha: 23 de octubre de 2026
  */
 
 #include <iostream>
